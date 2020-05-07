@@ -1,0 +1,18 @@
+---
+disclaimer: This is a disclaimer from layout.html
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+</head>
+<body>
+    {{ collections.menu }}
+    <hr>
+    {{ collections.documents }}
+    <hr>
+    {% menu collections.menu page.url %}
+    {{ content }}
+    <p>{{ disclaimer }}</p>
+</body>
+</html>
